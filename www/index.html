@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Forge Tango Multi Live Room Scanner for AEC Hackatron 2017 Munic</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    
+    <!-- The Viewer CSS -->
+    <link rel="stylesheet" href="https://developer.api.autodesk.com/viewingservice/v1/viewers/style.min.css" type="text/css">
+    
+    <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Viewer production -->
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/three.min.js"></script>
+    <script src="https://developer.api.autodesk.com/viewingservice/v1/viewers/viewer3D.min.js"></script>
+
+        
+    <!-- The Viewer Extensions -->
+    <script src="/extensions/Autodesk.ADN.Viewing.Extension.PolygonImporter.js"></script> 
+	
+    <!-- Other Extensions -->
+    <script src="/extensions/jquery.simple.websocket.min.js"></script> 
+    <script src="/extensions/FileSaver.min.js"></script> 
+    
+
+    <!-- The Viewer JS -->
+    <script src="/js/fileurn.js"></script>
+    <script src="/js/index.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top" id="my-navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+             <a class="navbar-brand" href="#">Forge Live Scan</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li>	
+                   <div id="mybutton">
+                         <input type="file" id="loadscandata" name="upload">Load Scan</input>
+                   </div>
+                   </li>
+                   <li class="myButton" id="savescandata" onclick="saveScanData()">Save Scan</div> 
+                  </li>                
+                </ul>
+            </div>
+        </div><!--End Container-->
+    </nav><!--End Navbar-->
+
+    <div class="container-fluid">
+        <!-- This is where your viewer should attach -->
+        <div class="row"> 
+          <div class="center-block" id="viewerDiv"></div>
+        </div>         
+    </div><!-- /container -->
+
+    <footer>
+      <p style="background-color: #000000;color: #fff;"><img src="/images/aechlogoHsmall.png" width="100"></img> &copy; 44Forge <a href="https://github.com/PhilWestner/ForgeLiveServer">View on GitHub </a></p>
+
+    </footer>
+
+</body>
+</html>

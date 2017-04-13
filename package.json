@@ -1,0 +1,34 @@
+{
+  "name": "forge-live-server-nodejs",
+  "version": "1.0.0",
+  "description": "NodeJS Server for AEC Hackatron 2017",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall" : "cp ./node_modules/file-saver/FileSaver.min.js ./www/extensions/ && cp ./node_modules/jquery-simple-websocket/dist/jquery.simple.websocket.min.js ./www/extensions/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhilWestner/ForgeLiveServer.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chalk": "^1.1.3",
+    "express": "^4.13.4",
+    "express-ws": "^3.0.0",
+    "file-saver": "^1.3.3",
+    "font-awesome": "^4.7.0",
+    "forge-apis": "^0.3.0",
+    "fs": "0.0.1-security",
+    "jquery-simple-websocket": "^1.1.2",
+    "request": "^2.72.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "author": "Phil Westner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhilWestner/ForgeLiveServer/issues"
+  },
+  "homepage": "https://github.com/PhilWestner/ForgeLiveServer#readme"
+}

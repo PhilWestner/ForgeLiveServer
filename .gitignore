@@ -35,3 +35,14 @@ jspm_packages
 
 # Optional REPL history
 .node_repl_history
+
+#setting private keys
+setenv.cmd
+
+#create by calling node uploadModel.js
+www/js/fileurn.js
+
+#copy from node_modules
+www/extensions/jquery.simple.websocket.min.js
+www/extensions/FileSaver.min.js
+

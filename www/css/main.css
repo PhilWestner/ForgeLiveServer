@@ -1,0 +1,134 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body {
+    height: 100%;
+}
+
+/*body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin: 0;
+}
+*/
+
+#viewerDiv {
+  height: 90%;
+  width: 100%;
+  /*margin: 0px;*/
+  /*overflow: hidden;*/
+  position: absolute;
+  top: 0;
+  bottom: 10%;
+  float: none; 
+  margin: 0 auto;  
+}
+
+.buttonbar {
+  position: absolute;
+  bottom: -10%;
+  width: 100%;
+  height: 31px;	
+}
+
+/*footer {
+    padding-top: 80%;
+}*/
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  border-top: 1px solid white;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.container {
+  padding: 0;
+  width: 100%;
+}*/
+
+h4 {
+  color: white;
+}
+
+.myButton {
+      background-color: white;
+      color: #4CAF50;
+      border: 2px solid #4CAF50;
+      border-radius: 8px;
+      display:inline-block;
+      cursor:pointer;
+      font-family:Verdana;
+      font-size:17px;
+      padding:10px 40px;
+      text-decoration:none;
+      margin-top: 1em;
+      -webkit-transition-duration: 0.4s; 
+      transition-duration: 0.4s;
+}
+
+.myButton:hover {
+      background-color: #4CAF50; 
+      color: white;
+}
+
+.myButton:active {
+      position:relative;
+      top:1px;
+}
+
+div#mybutton {
+
+  /* IMPORTANT STUFF */
+  overflow: hidden;
+  position: relative;
+  cursor:   pointer;   
+
+  /* SOME CUSTOM STYLING */
+  /*width:  200px;*/
+  background-color: white;
+  color: #4CAF50;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-size:17px;
+  padding:10px 40px;
+  text-decoration:none;
+  margin-top: 1em;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+}
+
+div#mybutton:hover {
+      background-color: #4CAF50; 
+      color: white;
+}
+
+div#mybutton:active {
+      position:relative;
+      top:1px;
+}
+
+input#loadscandata {
+  /*height: 20px;*/
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 17px;
+  z-index: 2;
+
+  opacity: 0.0; /* Standard: FF gt 1.5, Opera, Safari */
+  filter: alpha(opacity=0); /* IE lt 8 */
+  -ms-filter: "alpha(opacity=0)"; /* IE 8 */
+  -khtml-opacity: 0.0; /* Safari 1.x */
+  -moz-opacity: 0.0; /* FF lt 1.5, Netscape */
+}
