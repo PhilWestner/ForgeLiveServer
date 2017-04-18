@@ -1,5 +1,5 @@
 # ForgeLiveServer
-NodeJS Forge Live Server for the Autodesk AEC Hackatron 2017 Munic
+NodeJS Server component of [ForgeLiveScanner](https://github.com/SF85/ForgeLiveScanner) initally created during [AEC Hackathon 2017 Munich](http://aechackathon-germany.de) by [Team 44FORGE](http://aechackathon-germany.de/projects/).
 
 requires NodeJS installed
 
